@@ -24,6 +24,7 @@ public class Solution {
         likeVideo(video_2);
         likeVideo(video_1);
         likeVideo(video_3);
+        likeVideo(video_3);
 
         System.out.println("Первое видео набрало " + getLikes(video_1) + " лайка(-ов).");
         System.out.println("Второе видео набрало " + getLikes(video_2) + " лайка(-ов).");
