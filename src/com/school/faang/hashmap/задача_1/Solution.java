@@ -13,6 +13,10 @@ public class Solution {
         System.out.println("Get unexist video-like: " + solution.getLikes("id2"));
         solution.likeVideo("id3");
         System.out.println("Like unexist video-like: " + solution.videoLike.get("id3"));
+        solution.likeVideo("id_1");
+        solution.likeVideo("id_1");
+        solution.likeVideo("id_1");
+        System.out.println("Result after 3-like: "+ solution.videoLike.get("id_1"));
     }
 
     private HashMap<String, Integer> videoLike = new HashMap<>();
