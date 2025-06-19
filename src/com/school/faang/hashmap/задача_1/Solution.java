@@ -34,6 +34,6 @@ public class Solution {
         solution.likeVideo("asd32adS");
         System.out.println(solution.getLikes("dQw4w9WgXcQ"));
         System.out.println(solution.getLikes("asd32adS"));
-        System.out.println(solution.getLikes("daqeqw2sa3AS"));
+        System.out.println(solution.getLikes("daqeqw2sa3AS")); // комментарий
     }
 }
