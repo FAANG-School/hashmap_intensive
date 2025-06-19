@@ -12,7 +12,14 @@ public class Manager {
         if (number == null) {
             basket.put(product,1);
         } else {
-            basket.put(product)
+            basket.put(product, number+1);
+        }
+    }
+    public void getAllProduct() {
+        for (Map.Entry<Product, Integer> product: basket.entrySet()) {
+            String name = product.getKey().getName();
+            int number = product.getValue();
+            System.out.println("Наименование товара: "+ name +"; Кол-во: "+number);
         }
     }
 
