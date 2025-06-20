@@ -25,6 +25,7 @@ public class Solution {
     static void likeVideo(String videoId){
         if(!counter.containsKey(videoId)){
             counter.put(videoId, 1);
+            System.out.println(counter.get(videoId));
         }else {
             counter.put(videoId, counter.get(videoId) + 1);
         }
