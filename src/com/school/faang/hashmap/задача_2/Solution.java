@@ -18,5 +18,6 @@ public class Solution {
         for (Map.Entry<String, User> entry : users.entrySet()) {
             System.out.println("Пользователь @" + entry.getKey() + ", полное имя: " + entry.getValue().getFullName());
         }
+
     }
 }
