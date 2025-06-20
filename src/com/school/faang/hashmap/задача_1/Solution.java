@@ -5,6 +5,7 @@ import java.util.HashMap;
 public class Solution {
 
     public static void main(String[] args) {
+
         HashMap<String, Integer> videoLikes = new HashMap<>();
 
         String video1 = "dQw4w9WgXcQ";
