@@ -45,7 +45,7 @@ public class Solution {
 
 
         System.out.println(getLikes("ABCD2"));
-
+        System.out.println(getLikes("ABCD5"));
         System.out.println(getLikes("ABCD10"));
 
 
