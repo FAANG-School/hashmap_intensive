@@ -13,7 +13,7 @@ public class Solution {
         users.put("PIROZHOK", pirozhkov228);
         users.put("VASYA", vasya332);
         users.put("THEBEST", TheBest);
-        users.put("VODaLAS", Vodalas);
+        users.put("VODALAS", Vodalas);
 
         for (Map.Entry<String, User> entry : users.entrySet()) {
             System.out.println("Пользователь @" + entry.getKey() + ", полное имя: " + entry.getValue().getFullName());
