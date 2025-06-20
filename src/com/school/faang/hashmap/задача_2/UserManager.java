@@ -1,9 +1,10 @@
 package com.school.faang.hashmap.задача_2;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class UserManager {
-    HashMap<String, User> userBd;
+    Map<String, User> userBd;
 
     public UserManager() {
         this.userBd = new HashMap<>();
@@ -22,7 +23,7 @@ public class UserManager {
         return "пользователь не найден";
     }
 
-    public HashMap<String, User> getUserBd() {
+    public Map<String, User> getUserBd() {
         return userBd;
     }
 }

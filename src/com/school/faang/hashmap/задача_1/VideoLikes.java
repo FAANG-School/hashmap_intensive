@@ -1,9 +1,10 @@
 package com.school.faang.hashmap.задача_1;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class VideoLikes {
-    private HashMap<String, Integer> videoLikesMap;
+    private Map<String, Integer> videoLikesMap;
 
     public VideoLikes() {
         this.videoLikesMap  = new HashMap<>();
@@ -25,7 +26,7 @@ public class VideoLikes {
         return 0;
     }
 
-    public HashMap<String, Integer> getVideoLikesMap() {
+    public Map<String, Integer> getVideoLikesMap() {
         return videoLikesMap;
     }
 }

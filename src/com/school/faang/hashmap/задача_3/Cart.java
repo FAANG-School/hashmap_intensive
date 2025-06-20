@@ -1,16 +1,17 @@
 package com.school.faang.hashmap.задача_3;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.NoSuchElementException;
 
 public class Cart {
-    private HashMap<Product, Integer> cartBd;
+    private Map<Product, Integer> cartBd;
 
     public Cart() {
         this.cartBd  = new HashMap<>();;
     }
 
-    public HashMap<Product, Integer> getCartBd() {
+    public Map<Product, Integer> getCartBd() {
         return cartBd;
     }
 
