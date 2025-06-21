@@ -1,7 +1,48 @@
 package com.school.faang.hashmap.задача_5;
 
-public class Solution {
-    public static void main(String[] args) {
+import java.util.HashMap;
+import java.util.Map;
 
+public class Solution {
+
+    private static final Map<String, Integer> map = new HashMap<>();
+
+    private static final String text = "Геральт из Ривии был ведьмаком, созданным мутациями и заклинаниями." +
+            " Геральт охотился на чудовищ, защищая людей от тварей ночи. В своих скитаниях он встретил друзей и " +
+            "врагов: ведьмачку Йеннифэр, волшебницу Трисс Меригольд и принцессу Цири, " +
+            "которая стала его приемной дочерью. В детстве Геральт, как и другие ведьмаки, подвергался мутациям, " +
+            "из-за которых приобрел сверхчеловеческие боевые качества: повышенную силу, молниеносные рефлексы, " +
+            "ускоренный метаболизм, иммунитет к болезням, но при этом потерял возможность иметь детей. " +
+            "Их путь лежал через войны, интриги и древние пророчества. " +
+            "Цири была частью судьбы ведьмака, связанной с Зеркалом Древних и загадочной силой Линии Крови. " +
+            "Они сталкивались с империей Нильфгаард, королевствами Севера и могущественными существами из " +
+            "других миров. Ведьмак всегда выбирал трудные пути, где добро и зло были неоднозначны. " +
+            "Его жизнь была полна битв, любви и утрат. Ведьмак искал смысл бытия, пытался защитить тех, кого любил, " +
+            "и платил высокую цену за каждый свой выбор. В конце концов, именно связь между " +
+            "Геральтом и Цири спасла мир от разрушительного колдовства. " +
+            "Ведьмак доказал, что даже в мире без милости можно найти свет среди тьмы. Ведьмак, ведьмак, ведьмак!";
+
+    public static void main(String[] args) {
+        wordFrequencyCounter(text);
+        printInfo();
+    }
+
+    private static void wordFrequencyCounter(String text) {
+        String clearText = text.toLowerCase()
+                .replaceAll("[^a-zA-Zа-яА-Я\\s]", "")
+                .replaceAll("\\s+", " ");
+
+        String[] words = clearText.split(" ");
+        for (String word : words) {
+            map.merge(word, 1, Integer::sum);
+        }
+    }
+
+    private static void printInfo() {
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            if (entry.getValue() >= 5) {
+                System.out.println("Слово: " + entry.getKey() + " | частотность: " + entry.getValue());
+            }
+        }
     }
 }
