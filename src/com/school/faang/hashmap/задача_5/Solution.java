@@ -14,8 +14,7 @@ public class Solution {
 
         String cleaned = text
                 .toLowerCase() // в нижний регистр
-                .replaceAll("[^a-zа-яё0-9 ]", ""); // убрать всё, кроме букв, цифр и пробелов
-
+                .replaceAll("[^a-zа-яё0-9 ]", "");
         String[] words = cleaned.split("\\s+");
 
         Map<String, Integer> wordCounts = new HashMap<>();
@@ -24,7 +23,6 @@ public class Solution {
             wordCounts.put(word, wordCounts.getOrDefault(word, 0) + 1);
         }
 
-        // Вывод слов, которые встречаются чаще 5 раз
         System.out.println("Слова, которые встречаются больше 5 раз:\n");
         for (Map.Entry<String, Integer> entry : wordCounts.entrySet()) {
             if (entry.getValue() > 5) {
