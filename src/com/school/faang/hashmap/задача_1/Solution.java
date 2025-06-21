@@ -26,7 +26,5 @@ public class Solution {
         System.out.println("Likes for video xvFZjo5PgG0: " + solution.getLikes("xvFZjo5PgG0"));
         System.out.println("Likes for video iik25wqIuFo: " + solution.getLikes("iik25wqIuFo"));
         System.out.println("Likes for non-existent video: " + solution.getLikes("abc123"));
-
-
     }
 }
