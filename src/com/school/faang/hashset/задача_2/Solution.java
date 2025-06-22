@@ -7,10 +7,10 @@ public class Solution {
         users.blockUser("Aleksandr_Chilikin");
         users.blockUser("Vlad_Mishustin");
         users.blockUser(null);
-        System.out.println("Статус: " + users.isUserBlocked(null)) ;
+        System.out.println("Заблокирован: " + users.isUserBlocked(null)) ;
         users.unblockUser(null);
-        System.out.println("Статус: " + users.isUserBlocked(null)) ;
+        System.out.println("Разблокирован: " + users.isUserBlocked(null)) ;
         users.unblockUser("Vlad_Mishustin");
-       System.out.println("Статус: " + users.isUserBlocked("Vlad_Mishustin")) ;
+       System.out.println("Разблокирован: " + users.isUserBlocked("Vlad_Mishustin")) ;
     }
 }

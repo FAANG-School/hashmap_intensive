@@ -2,7 +2,7 @@ package com.school.faang.hashset.задача_2;
 import java.util.HashSet;
 public class UserBlacklist {
 
-    private HashSet<String>   blockedUsers = new HashSet <>();
+    private HashSet<String> blockedUsers = new HashSet <>();
 public void blockUser(String username)  {
     if (!blockedUsers.contains(username)) {
         blockedUsers.add(username);
