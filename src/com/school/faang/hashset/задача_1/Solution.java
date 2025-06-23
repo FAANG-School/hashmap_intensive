@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 public class Solution {
     static class EventRegistration {
-        static public HashSet<String> registeredEmails = new HashSet<>(); // HashSet публичный, потому что мы будем с ним много работать
+        static public HashSet<String> registeredEmails = new HashSet<>(); // HashSet публичный, так как мы будем с ним много работать
     }
 
     public void register(String email) {
