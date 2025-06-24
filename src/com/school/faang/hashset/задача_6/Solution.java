@@ -1,5 +1,7 @@
 package com.school.faang.hashset.задача_6;
 
+import java.util.*;
+
 public class Solution {
     public static void main(String[] args) {
         RecommendationEngine engine = new RecommendationEngine();
