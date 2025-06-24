@@ -1,6 +1,10 @@
 package com.school.faang.hashset.задача_5;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Objects;
+import java.util.Set;
 
 public class Solution {
     public static void main(String[] args) {
