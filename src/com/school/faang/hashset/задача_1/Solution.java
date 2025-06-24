@@ -1,5 +1,8 @@
 package com.school.faang.hashset.задача_1;
 
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Solution {
     public static void main(String[] args) {
